@@ -13,6 +13,10 @@ g.hlsearch = false
 g.completeopt = "menuone,noselect"
 g.inccommand = "nosplit"
 g.hidden = true
+g.backup = false
+g.writebackup = false
+g.undofile = true
+g.swapfile = false
 
 -- window
 local w = vim.wo
