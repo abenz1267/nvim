@@ -21,7 +21,7 @@ w.number = true
 w.relativenumber = true
 w.cursorline = true
 w.signcolumn = "no"
-vim.cmd 'autocmd BufRead * :set fcs=eob:\\ '
+vim.cmd 'autocmd BufEnter * :set fcs=eob:\\ '
 
 -- buffer
 local b = vim.bo
