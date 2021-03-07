@@ -19,6 +19,10 @@ return require('packer').startup(function(use)
   use {'tpope/vim-surround'}
   use {'tpope/vim-commentary'}
   use {'matze/vim-move'}
-  use {'vim-airline/vim-airline', requires = {'vim-airline/vim-airline-themes'}}
+  -- use {'vim-airline/vim-airline', requires = {'vim-airline/vim-airline-themes'}}
+  use {
+  'glepnir/galaxyline.nvim',
+    branch = 'main'
+}
   use {'prettier/vim-prettier', run = 'yarn install'}
 end)
