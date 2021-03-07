@@ -19,10 +19,10 @@ map('n', '<C-K>', '<C-W><C-K>')
 map('n', '<C-L>', '<C-W><C-L>')
 map('n', '<C-H>', '<C-W><C-H>')
 
-map('n', '<C-Right>', ':vertical resize +10', { silent = true } )
-map('n', '<C-Left>', ':vertical resize -10', { silent = true } )
-map('n', '<C-Up>', ':resize -10', { silent = true } )
-map('n', '<C-Down>', ':resize -10', { silent = true } )
+map('n', '<C-Right>', ':vertical resize +10<CR>', { silent = true } )
+map('n', '<C-Left>', ':vertical resize -10<CR>', { silent = true } )
+map('n', '<C-Up>', ':resize -10<CR>', { silent = true } )
+map('n', '<C-Down>', ':resize -10<CR>', { silent = true } )
 
 -- telescope
 local actions = require('telescope.actions')
