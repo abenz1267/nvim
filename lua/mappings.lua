@@ -7,7 +7,7 @@ end
 -- general
 vim.g.mapleader = ' '
 
-map('n', '<leader>to', ':tabonly <CR>', { silent = true}) -- close all tabs execpt current
+map('n', '<leader>to', ':BufferCloseAllButCurrent<CR>', { silent = true }) -- close all tabs execpt current
 map('i', 'jj', '<esc>', { noremap = true } ) -- exit insert mode
 
 map('n', '<Leader>dc', ':setlocal formatoptions-=cro<CR>', { silent = true }) -- disable comment on newline
