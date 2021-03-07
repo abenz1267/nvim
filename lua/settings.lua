@@ -31,6 +31,10 @@ vim.cmd 'autocmd BufEnter * :set fcs=eob:\\ '
 local b = vim.bo
 local indent = 2
 
-b.expandtab = true
-b.tabstop = indent
-b.shiftwidth = indent
+vim.cmd 'set expandtab'
+vim.cmd 'set tabstop=2'
+vim.cmd 'set shiftwidth=2'
+
+-- b.expandtab = true
+-- b.tabstop = indent
+-- b.shiftwidth = indent
