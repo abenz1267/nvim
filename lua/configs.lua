@@ -1,4 +1,4 @@
--- treesitter
+-- Treesitter
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",     -- one of "all", "language", or a list of languages
   highlight = {
@@ -6,20 +6,20 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
--- tree
+-- Tree
 vim.g.nvim_tree_width = 50
 vim.g.nvim_tree_ignore = {'.git', 'node_modules', '.cache'}
 vim.g.nvim_tree_show_icons = {
 	git = 0,
-	folder = 1,
+	folders = 1,
 	files = 1
 }
 
--- lazygit
+-- Lazygit
 vim.g.lazygit_floating_window_windblend = 0
 vim.g.lazygit_floating_window_scaling_factor = 1.0
 
--- compe
+-- Compe
 require'compe'.setup {
   enabled = true;
   autocomplete = true;
@@ -48,7 +48,7 @@ require'compe'.setup {
   };
 }
 
--- beacon
+-- Beacon
 vim.g.beacon_shrink = 0
 vim.g.beacon_size = 1000
 vim.g.beacon_ignore_filetypes = {'fzf'}

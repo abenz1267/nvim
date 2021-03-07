@@ -1,5 +1,9 @@
 require('colorbuddy').colorscheme('onebuddy')
 
+-- custom overrides
+local _, colors, Group, _, styles = require('colorbuddy').setup()
+Group.new('SignColumn', colors.none, colors.none, styles.NONE)
+
 -- lualine
 local lualine = require('lualine')
 lualine.options.theme = 'onedark'

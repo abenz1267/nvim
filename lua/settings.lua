@@ -24,7 +24,7 @@ local w = vim.wo
 w.number = true
 w.relativenumber = true
 w.cursorline = true
-w.signcolumn = "no"
+w.signcolumn = "yes"
 vim.cmd 'autocmd BufEnter * :set fcs=eob:\\ '
 
 -- buffer
