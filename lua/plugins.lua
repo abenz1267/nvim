@@ -8,7 +8,6 @@ return require('packer').startup(function(use)
   use {'tjdevries/nlua.nvim'}
   use {'DanilaMihailov/beacon.nvim'}
   use {'hrsh7th/nvim-compe', requires = {{'hrsh7th/vim-vsnip'}}}
-  use {'hoob3rt/lualine.nvim', config = function() require('lualine').status() end}
   use {
       'nvim-telescope/telescope.nvim',
       requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
@@ -22,7 +21,18 @@ return require('packer').startup(function(use)
   use {'romgrk/barbar.nvim'}
   use {
   'glepnir/galaxyline.nvim',
-    branch = 'main'
+   branch = 'main'
   }
+
+  use {
+  'lewis6991/gitsigns.nvim',
+  requires = {
+    'nvim-lua/plenary.nvim'
+  },
+  config = function()
+    require('gitsigns').setup()
+    end
+  }
+
   use {'prettier/vim-prettier', run = 'yarn install'}
 end)

@@ -5,8 +5,8 @@ local _, colors, Group, _, styles = require('colorbuddy').setup()
 Group.new('SignColumn', colors.none, colors.none, styles.NONE)
 Group.new('NormalFloat', colors.none, colors.pmenu, styles.NONE)
 
--- lualine
-local lualine = require('lualine')
-lualine.options.theme = 'onedark'
-lualine.options.section_separators = nil
-lualine.options.component_separators = nil
+Group.new('DiffAdd', colors.green, colors.none, styles.NONE)
+Group.new('DiffChange', colors.orange, colors.none, styles.NONE)
+Group.new('DiffDelete', colors.red, colors.none, styles.NONE)
+
+Group.new('BufferTabpageFill', colors.none, colors.syntax_bg, styles.NONE)
