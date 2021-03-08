@@ -71,3 +71,6 @@ map('n', '<leader>K', '<cmd>lua vim.lsp.buf.hover()<CR>', {silent = true})
 map('n', '<leader>s', '<cmd>lua vim.lsp.buf.signature_help()<CR>', {silent = true})
 map('n', '<leader>td', '<cmd>lua vim.lsp.buf.type_definition()<CR>', {silent = true})
 map('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', {silent = true})
+
+-- Telescope
+map('n', '<leader>cc', '<cmd>lua require("telescope.builtin").find_files({prompt_title = "<NVIM CONFIG>", cwd = "~/.config/nvim"})<CR>', {silent = true})
