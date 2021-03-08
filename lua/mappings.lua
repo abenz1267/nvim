@@ -24,7 +24,7 @@ map('n', '<C-Left>', ':vertical resize -10<CR>', { silent = true } )
 map('n', '<C-Up>', ':resize -10<CR>', { silent = true } )
 map('n', '<C-Down>', ':resize -10<CR>', { silent = true } )
 
--- telescope
+-- Telescope
 local actions = require('telescope.actions')
 require('telescope').setup{
   defaults = {
@@ -44,6 +44,7 @@ map('n','<C-p>', '<cmd>Telescope find_files<CR>')
 map('n','<A-p>', '<cmd>Telescope live_grep<CR>')
 map('n','<C-A-p>', '<cmd>Telescope grep_string<CR>')
 map('n','<S-A-p>', '<cmd>Telescope oldfiles<CR>')
+map('n', '<leader>cc', '<cmd>lua require("telescope.builtin").find_files({prompt_title = "<NVIM CONFIG>", cwd = "~/.config/nvim"})<CR>', {silent = true})
 
 -- Tree
 map('n','<C-n>', ':NvimTreeToggle<CR>', { silent = true })
@@ -71,6 +72,3 @@ map('n', '<leader>K', '<cmd>lua vim.lsp.buf.hover()<CR>', {silent = true})
 map('n', '<leader>s', '<cmd>lua vim.lsp.buf.signature_help()<CR>', {silent = true})
 map('n', '<leader>td', '<cmd>lua vim.lsp.buf.type_definition()<CR>', {silent = true})
 map('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', {silent = true})
-
--- Telescope
-map('n', '<leader>cc', '<cmd>lua require("telescope.builtin").find_files({prompt_title = "<NVIM CONFIG>", cwd = "~/.config/nvim"})<CR>', {silent = true})
