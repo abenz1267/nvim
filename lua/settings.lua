@@ -23,6 +23,7 @@ local globals = {
   writebackup = false,
   undofile = true,
   swapfile = false,
+  showmode = false,
   updatetime = 300
 }
 
@@ -32,7 +33,7 @@ local windows = {
   number = true,
   relativenumber = true,
   cursorline = true,
-  signcolumn = "number"
+  signcolumn = "yes"
 }
 
 vim.cmd 'autocmd BufEnter * :set fcs=eob:\\ '
