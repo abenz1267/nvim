@@ -63,11 +63,11 @@ map('n', '<Leader>ca', '<cmd>Telescope lsp_code_actions<CR>', {silent = true})
 map('n', '<Leader>rca', '<cmd>Telescope lsp_range_code_actions<CR>',
     {silent = true})
 map('n', '<Leader>gr', '<cmd>Telescope lsp_references<CR>', {silent = true})
+map('n', '<leader>gd', '<cmd>Telescope lsp_definitions<CR>', {silent = true})
 
 map('n', '<leader>ne',
     '<cmd>lua vim.lsp.diagnostic.goto_next { wrap = true }<CR>')
 map('n', '<leader>pe', '<cmd>lua vim.lsp.diagnostic.goto_prev{wrap=true}<CR>')
-map('n', '<leader>gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {silent = true})
 map('n', '<leader>gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', {silent = true})
 map('n', '<leader>gi', '<cmd>lua vim.lsp.buf.implementation()<CR>',
     {silent = true})
