@@ -1,11 +1,7 @@
 vim.cmd 'filetype plugin indent on'
 vim.cmd 'syntax enable'
 
-local function set(scope, values)
-  for k,v in pairs(values) do
-    scope[k] = v
-  end
-end
+local function set(scope, values) for k, v in pairs(values) do scope[k] = v end end
 
 -- global
 local g = vim.o
