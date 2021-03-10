@@ -116,4 +116,9 @@ return require('packer').startup(function(use)
       vim.cmd 'let g:prettier#quickfix_auto_focus = 0'
     end
   }
+
+  use {
+    'norcalli/nvim-colorizer.lua',
+    config = function() require('colorizer').setup() end
+  }
 end)
