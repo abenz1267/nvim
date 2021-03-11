@@ -20,7 +20,8 @@ local globals = {
   undofile = true,
   swapfile = false,
   showmode = false,
-  updatetime = 300
+  updatetime = 300,
+  background = "dark"
 }
 
 -- window

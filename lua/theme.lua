@@ -23,6 +23,7 @@ Group.new('TSNamespace', colors.pink, colors.none, styles.italic)
 Group.new('TSRepeat', colors.pink, colors.none, styles.italic)
 
 Group.new('IncSearch', colors.syntax_accent, colors.none, styles.NONE)
+Group.new('Error', colors.none, colors.none, styles.NONE)
 
 --     Color.new('mono_1', "#abb2bf")
 --     Color.new('mono_2', "#828997")
