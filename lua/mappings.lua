@@ -7,6 +7,17 @@ end
 -- general
 vim.g.mapleader = ' '
 
+vim.cmd [[
+function! Save_and_exec() abort
+  if &filetype == 'lua'
+    :silent! write
+    :luafile %
+  endif
+endfunction
+
+nnoremap <leader><leader>x :call Save_and_exec()<CR>
+]]
+
 map('n', '<leader>to', ':BufferCloseAllButCurrent<CR>', {silent = true}) -- close all tabs execpt current
 map('i', 'jj', '<esc>', {noremap = true}) -- exit insert mode
 
