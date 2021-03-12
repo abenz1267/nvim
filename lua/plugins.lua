@@ -123,4 +123,18 @@ return require('packer').startup(function(use)
   }
 
   use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
+  use {
+    'nvim-treesitter/playground',
+    config = function()
+      require"nvim-treesitter.configs".setup {
+        playground = {
+          enable = true,
+          disable = {},
+          updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
+          persist_queries = false -- Whether the query persists across vim sessions
+        }
+      }
+    end
+  }
+
 end)
