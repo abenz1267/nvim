@@ -3,7 +3,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local nvim_lsp = require 'lspconfig'
 
-local servers = {"html", "cssls", "tsserver"}
+local servers = {"html", "cssls", "tsserver", "rust_analyzer"}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {capabilities = capabilities}
 end
