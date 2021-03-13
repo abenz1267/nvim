@@ -1,4 +1,5 @@
 # Personal Neovim config
+![Screenshot](nvim.png)
 
 ## Installation
 
@@ -9,3 +10,4 @@ Packer will be installed automatically, just havea to run: `:PackerInstall` to i
 ### LuaFormatter
 
 `luarocks install --server=https://luarocks.org/dev luaformatter`
+
