@@ -25,6 +25,8 @@ Group.new('TSRepeat', colors.pink, colors.none, styles.italic)
 Group.new('IncSearch', colors.syntax_accent, colors.none, styles.NONE)
 Group.new('Error', colors.none, colors.none, styles.NONE)
 
+Group.new('PmenuSel', colors.syntax_bg, colors.hue_4, styles.NONE)
+
 --     Color.new('mono_1', "#abb2bf")
 --     Color.new('mono_2', "#828997")
 --     Color.new('mono_3', "#5c6370")
