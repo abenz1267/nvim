@@ -18,3 +18,5 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] =
     })
 
 vim.cmd 'autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.go lua vim.lsp.buf.formatting_sync(nil, 1000)'
+
+nvim_lsp.jdtls.setup {cmd = {'/usr/bin/jdtls'}}
